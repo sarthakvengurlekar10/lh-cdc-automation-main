@@ -1,0 +1,36 @@
+portal_id: GLHCIntgPortal 
+hoster_id: 8bf5a887-d562-4eda-8bd2-a4c2d7be01c2 
+project_id: '*'
+id: bac38a82-1582-4f4d-a14e-ab2bd0ad537a 
+etag: 4659b445-acb4-4c31-9828-d1928f377d4b
+name: Replicated standard volume flavor 
+created: "2021-09-27T21:29:44.335Z"
+modified: "2021-09-27T21:29:44.335Z"
+resource_type: volumeflavor
+schema_version: v1
+project_use: true
+hoster_use: true
+description: A replicated standard fileystem share with low latency
+billing:
+  method: hourly
+  rates:
+  - hourly: "0.0001"
+    monthly: "0.0025"
+    currency: USD
+classifiers:
+- name: Standard filesystem share
+  rules:
+  - attribute: latency
+    value: LatencyStandard
+    operator: contains
+weight: 1
+auto_config:
+  synced_from_remote: false
+  reference_id: ""
+storage_attributes:
+- attribute: replicationFactor
+  value: 1
+- attribute: replicationType
+  value: low_latency
+- attribute: label 
+  value: nvme

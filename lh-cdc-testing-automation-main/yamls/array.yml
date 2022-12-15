@@ -1,0 +1,27 @@
+portal_id: GLHCIntgPortal
+hoster_id: 8bf5a887-d562-4eda-8bd2-a4c2d7be01c2
+id: 219de939-bbbc-4971-ace5-744cff33531e 
+etag: f7b676cc-888c-4ee0-81df-101e09f2a636
+name: Data Fabric Filesystem
+created: "2021-09-27T21:29:52.389Z"
+modified: "2021-09-27T21:57:03.639Z"
+resource_type: array
+schema_version: v1
+rackID: 64ae93dd-cd95-46c2-ae40-1a483800a122
+location:
+  country: ""
+  region: ""
+  data_center: ""
+podID: d6dca125-35f5-4cc7-b3ea-f5d888b4afcc
+storage_id: mapr-cluster.perflab.hp.com
+lastSeen: "2021-09-27T21:57:03.627Z"
+driver: sds 
+acs: username=mapr;password=mapr;storageRestHost=https://172.28.220.6:8443;storageId=ece;cdcRestUri=http://172.28.4.55:8000/data-fabric/v1;clusterType=MapR 
+connections: []
+monitored: false
+health_status:
+  summary: OK
+  reason: ""
+  details:
+    mapr-cluster.perflab.hp.com: OK
+  changed: "2021-09-27T21:40:50.000Z"
